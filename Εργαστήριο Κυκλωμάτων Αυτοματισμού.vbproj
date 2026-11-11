@@ -1,0 +1,1330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FF84DEFE-8CB5-45B2-B454-97926988E640}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ΕργαστήριοΚυκλωμάτωνΑυτοματισμού.My.MyApplication</StartupObject>
+    <RootNamespace>ΕργαστήριοΚυκλωμάτωνΑυτοματισμού</RootNamespace>
+    <AssemblyName>Εργαστήριο κυκλωμάτων αυτοματισμού με ηλεκτρονόμους</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>en</TargetCulture>
+    <ProductName>Εργαστήριο Κυκλωμάτων Αυτοματισμού με Ηλεκτρονόμους</ProductName>
+    <PublisherName>Σμυρλόγλου Χρήστος</PublisherName>
+    <SuiteName>Εργαστήριο Κυκλωμάτων Αυτοματισμού με Ηλεκτρονόμους</SuiteName>
+    <ApplicationRevision>64</ApplicationRevision>
+    <ApplicationVersion>0.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Εργαστήριο κυκλωμάτων αυτοματισμού με ηλεκτρονόμους.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Εργαστήριο κυκλωμάτων αυτοματισμού με ηλεκτρονόμους.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Contactor.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2085F99488573DDC76636B649C6DD33B9928F301</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Εργαστήριο Κυκλωμάτων Αυτοματισμού_2_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acknoledgement.Designer.vb">
+      <DependentUpon>Acknoledgement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Acknoledgement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Actuators\DoorLock_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Appliance\AC_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Appliance\Bell_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Appliance\Dishwasher_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Appliance\Dryer_Activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Appliance\Fan_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Appliance\Freezer_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Appliance\Heater_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Appliance\Hood_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Appliance\Microwave_Activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Appliance\Oven_Activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Appliance\TV_Activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Appliance\WashingMachine_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Appliance\WaterHeater_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Buttons\EmergencyButton_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\CircuitBreakers-Fuses-RCD\CircuitBreaker2P_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\CircuitBreakers-Fuses-RCD\CircuitBreaker4P_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\CircuitBreakers-Fuses-RCD\RCBO1p_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\CircuitBreakers-Fuses-RCD\RCBO3p_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\CircuitBreakers-Fuses-RCD\XeiristhrioLN3P_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Indicators-Lamps\Faros_Activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Meters\hourmeter_activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Meters\Voltmeter_ActiveImage.vb" />
+    <Compile Include="Components\Elements\PowerSupply\Power_Activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\PowerSupply\Power_nyxt_Activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Relay\Klimakostasioy_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Relay\ReleLyxnias_Activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Sensor\LightSensor_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Sensor\RainSensor_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Sensor\WindSensor_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Simulations\Awning\AwningSettingsForm.Designer.vb">
+      <DependentUpon>AwningSettingsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Elements\Simulations\Awning\AwningSettingsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Simulations\Awning\Awning_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Simulations\SlidingDoor\SlidingDoorSettingsForm.Designer.vb">
+      <DependentUpon>SlidingDoorSettingsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Elements\Simulations\SlidingDoor\SlidingDoorSettingsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Simulations\SlidingDoor\SlidingDoor_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Surge Protection\SurgeProtector1p_Activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Surge Protection\SurgeProtector3p_Activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Switches\KeySwitch_Activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Switches\MpoutonFwtismou_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Switches\MpoutonKoudouniou_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Switches\Switch2p_Activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Switches\Switch4P_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Switches\Switch5P_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Terminal Switches\FloatingSwitch_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Simulations\WaterTank\WaterTankSettings.Designer.vb">
+      <DependentUpon>WaterTankSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Elements\Simulations\WaterTank\WaterTankSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Simulations\WaterTank\WaterTank_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Template\ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Components\Elements\Motors\ATKD_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Motors\ATKNoConnection_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Motors\ATKY_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Alarm\buzzer_Activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\CircuitBreakers-Fuses-RCD\CircuitBreaker1P_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\CircuitBreakers-Fuses-RCD\CircuitBreaker3P_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Connection Devices\Connector_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\CircuitBreakers-Fuses-RCD\DDE1_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\CircuitBreakers-Fuses-RCD\DDE_Activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Time Relays\DelayOff_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Time Relays\DelayOn_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\CircuitBreakers-Fuses-RCD\fuse1p_activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\CircuitBreakers-Fuses-RCD\fuse3p_activeimae.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\CircuitBreakers-Fuses-RCD\Fuse_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Simulations\GarageDoor\GarageDoor_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Sockets\Socket1ph_activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Sockets\SocketIND3p.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Sockets\SocketIND4p.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Sockets\SocketIND5p.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\CircuitBreakers-Fuses-RCD\XeiristhrioLN1P_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\PLC\PLC.vb" />
+    <Compile Include="Components\Elements\PLC\PLCWatch.Designer.vb">
+      <DependentUpon>PLCWatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Elements\PLC\PLCWatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\PLC\Resources\All\PLCCounter.vb" />
+    <Compile Include="Components\Elements\PLC\Resources\All\PLCInput.vb" />
+    <Compile Include="Components\Elements\PLC\Resources\All\PLCMemory.vb" />
+    <Compile Include="Components\Elements\PLC\Resources\All\PLCOutput.vb" />
+    <Compile Include="Components\Elements\PLC\Resources\All\PLCSingleResource.vb" />
+    <Compile Include="Components\Elements\PLC\Resources\All\PLCTimerDelayOff.vb" />
+    <Compile Include="Components\Elements\PLC\Resources\All\PLCTimerDelayOn.vb" />
+    <Compile Include="Components\Elements\PLC\Resources\PLCResources.vb" />
+    <Compile Include="Components\Elements\PLC\PLC_Activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Relay\ReleKastanias.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Relay\ReleRagas.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Indicators-Lamps\Lamp_Activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Indicators-Lamps\LightGreen_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Indicators-Lamps\LightRed_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Switches\LightSwitchALE_activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Switches\LightSwitchComitater_activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Switches\LightSwitchMES_Activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Switches\LightSwitchSingle_Activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Connection Devices\mparaOudeterou_activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Connection Devices\mparageiwshs_activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Terminal Switches\PhotoSwitch_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Relay\Relay2NO2NC_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Motors\SinglePhaseMotor_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Alarm\Siren_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Buttons\StartStop_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Buttons\Start_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Buttons\Stop_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Switches\Switch1P_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Switches\Switch3P_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Terminal Switches\Termatikos_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Motor Protection\Thermomagnetic_Activeimage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Indicators-Lamps\ThreePhaseIndicator_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\PLC\Resources\PLC_Set_Equations.Designer.vb">
+      <DependentUpon>PLC_Set_Equations.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Elements\PLC\Resources\PLC_Set_Equations.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\Template\SimpleSinglePhaseComponentTemplate.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Template\SimpleSinglePhaseComponentWithGrounding.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Template\TerminalSwitchTemplate.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Edit.Designer.vb">
+      <DependentUpon>Edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\Simulations\GarageDoor\GarageSettingsForm.Designer.vb">
+      <DependentUpon>GarageSettingsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Elements\Simulations\GarageDoor\GarageSettingsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalInfo.vb" />
+    <Compile Include="GlobalSuppressions.vb" />
+    <Compile Include="Components\Elements\Relay\Relay_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Elements\PLC\PLCGlobals.vb" />
+    <Compile Include="Simulator.Designer.vb">
+      <DependentUpon>Simulator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Simulator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SingleScrewData.vb" />
+    <Compile Include="Components\Elements\Motor Protection\Thermiko_ActiveImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Watch.Designer.vb">
+      <DependentUpon>Watch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Watch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wire.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WireWorks.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Acknoledgement.resx">
+      <DependentUpon>Acknoledgement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Elements\Connection Devices\mparaOudeterou_activeimage.resx">
+      <DependentUpon>mparaOudeterou_activeimage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Elements\Motors\ATKY_ActiveImage.resx">
+      <DependentUpon>ATKY_ActiveImage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Elements\PLC\PLCWatch.resx">
+      <DependentUpon>PLCWatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Elements\PLC\Resources\PLC_Set_Equations.resx">
+      <DependentUpon>PLC_Set_Equations.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Elements\Simulations\Awning\AwningSettingsForm.resx">
+      <DependentUpon>AwningSettingsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Elements\Simulations\SlidingDoor\SlidingDoorSettingsForm.resx">
+      <DependentUpon>SlidingDoorSettingsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Elements\Simulations\WaterTank\WaterTankSettings.resx">
+      <DependentUpon>WaterTankSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit.resx">
+      <DependentUpon>Edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Elements\Simulations\GarageDoor\GarageSettingsForm.resx">
+      <DependentUpon>GarageSettingsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simulator.resx">
+      <DependentUpon>Simulator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Watch.resx">
+      <DependentUpon>Watch.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ContactorCircuitSimulator_1_TemporaryKey.pfx" />
+    <None Include="ContactorCircuitSimulator_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\ΕργαστήριοΚυκλωμάτωνΑυτοματισμού.My.MyApplication.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Εργαστήριο Κυκλωμάτων Αυτοματισμού_1_TemporaryKey.pfx" />
+    <None Include="Εργαστήριο Κυκλωμάτων Αυτοματισμού_2_TemporaryKey.pfx" />
+    <None Include="Εργαστήριο Κυκλωμάτων Αυτοματισμού_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RelayButton.png" />
+    <None Include="Resources\ThermikoButton.png" />
+    <None Include="Resources\Stopbutton.png" />
+    <None Include="Resources\StartButton.png" />
+    <None Include="Resources\StartStopbutton.png" />
+    <None Include="Resources\Ηλεκτρονόμος1NO1NC.png" />
+    <None Include="Resources\Θερμικό.png" />
+    <None Include="Resources\LightRedButton.png" />
+    <None Include="Resources\LightGreenButton.png" />
+    <None Include="Resources\fuse_1P.png" />
+    <None Include="Resources\fuse_3P.png" />
+    <None Include="Resources\fuse_1PButton.png" />
+    <None Include="Resources\Switch_1pButton.png" />
+    <None Include="Resources\Supply_button.png" />
+    <None Include="Resources\Supply_FromTopbutton.png" />
+    <None Include="Resources\Supply_FromBelowbutton.png" />
+    <None Include="Resources\Supply_FromLeftbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3phasemotorD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3phasemotorY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MotorButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MotorButtonD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MotorButtonY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3phasemotor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConnectorButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DelayOnButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DelayOffButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relay_powered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3phasemotorY_Working_Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3phasemotorY_Working_Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LightGreen-on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thermiko.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thermiko_Reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thermiko_Tripped_Test_Reset_Pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CircuitBreaker_1P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CircuitBreaker_1P_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CircuitBreaker_3P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CircuitBreaker_3P_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Connector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DelayOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DelayOn_Tripped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LightGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LightGreen_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LightRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LightRed_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\motor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\motor_Working_Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\motor_Working_Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MotorD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\motorD_Working_Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\motorD_Working_Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MotorY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\motorY_Working_Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\motorY_Working_Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relay1NO1NC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StartStop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StartStop_Pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop_Pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Supply_FromBelow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Supply_FromLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Supply_FromTop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Switch_1p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Switch_1p_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Switch_3p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Switch_3p_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DelayOn_Powered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start_Pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thermiko_Tripped_Test_Pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thermiko_Tripped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Photo_Switch_Active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Terminal_Switch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Terminal_Switch_Active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Photo_Switch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Photo_SwitchButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TerminalButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motor1PButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motor1PWorkingLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motor1PWorkingRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motor1P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lamp_powered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Relay2NO2NCButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LampButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\savedisk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom-in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open_file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power_on_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\savebmp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\54047__guitarguy1985__buzzer.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\54047__guitarguy1985__buzzer.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buzzer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buzzer_powered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siren.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siren_powered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\632233__audacitier__machine-motor.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\97182__timbre__electric-motor-spin-up-noise-1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\644035__szntndr__kontaktorok.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\192278__lebaston100__click.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relay1NO1NC_Powered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DelayOff_Powered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DelayOff_Powered_Counting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DelayOff_Tripped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DelayOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound_on_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound_mute_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contactor.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contactor.ico" />
+    <None Include="Resources\Voltmeter_button.png" />
+    <None Include="Resources\CVoltmeter.png" />
+    <None Include="Resources\Voltmeter.png" />
+    <None Include="Resources\CSurgeProtector1_On.png" />
+    <None Include="Resources\SurgeProtector1_On.png" />
+    <None Include="Resources\CSurgeProtector1_Off.png" />
+    <None Include="Resources\SurgeProtector1_Off.png" />
+    <None Include="Resources\CSurgeProtector3_On.png" />
+    <None Include="Resources\SurgeProtector3_On.png" />
+    <None Include="Resources\SurgeProtector3_Button.png" />
+    <None Include="Resources\SurgeProtector3_Off.png" />
+    <None Include="Resources\SurgeProtector1_Button.png" />
+    <None Include="Resources\CSurgeProtector3_Off.png" />
+    <None Include="Resources\CRCBO3p_test.png" />
+    <None Include="Resources\CRCBO3p_on.png" />
+    <None Include="Resources\CRCBO3p_off.png" />
+    <None Include="Resources\CRCBO1p_test.png" />
+    <None Include="Resources\CRCBO1p_on.png" />
+    <None Include="Resources\CRCBO1p_off.png" />
+    <None Include="Resources\RCBO3p_test.png" />
+    <None Include="Resources\RCBO3p_on.png" />
+    <None Include="Resources\RCBO3p_off.png" />
+    <None Include="Resources\RCBO1p_test.png" />
+    <None Include="Resources\RCBO1p_on.png" />
+    <None Include="Resources\RCBO1p_off.png" />
+    <None Include="Resources\RCBO3pButton.png" />
+    <None Include="Resources\RCBO1pButton.png" />
+    <None Include="Resources\CDDE_on.png" />
+    <None Include="Resources\CDDE1_on.png" />
+    <None Include="Resources\CXEIRLN3p1.png" />
+    <None Include="Resources\CCircuitBreaker_4P.png" />
+    <None Include="Resources\XEIR2pButton.png" />
+    <None Include="Resources\XEIR4pButton.png" />
+    <None Include="Resources\CircuitBreaker_4PButton.png" />
+    <None Include="Resources\CircuitBreaker_3PButton.png" />
+    <None Include="Resources\CircuitBreaker_2PButton.png" />
+    <None Include="Resources\CircuitBreaker_1PButton.png" />
+    <None Include="Resources\CXEIRLN1.png" />
+    <None Include="Resources\CXEIRLN0.png" />
+    <None Include="Resources\CCircuitBreaker_4P_off.png" />
+    <None Include="Resources\CCircuitBreaker_2P.png" />
+    <None Include="Resources\CCircuitBreaker_2P_off.png" />
+    <None Include="Resources\CCircuitBreaker_3P_off.png" />
+    <None Include="Resources\CCircuitBreaker_3P.png" />
+    <None Include="Resources\CCircuitBreaker_1P_off.png" />
+    <None Include="Resources\CCircuitBreaker_1P.png" />
+    <None Include="Resources\XEIRLN3p1.png" />
+    <None Include="Resources\XEIRLN3p0.png" />
+    <None Include="Resources\XEIRLN0.png" />
+    <None Include="Resources\XEIRLN1.png" />
+    <None Include="Resources\CircuitBreaker_4P_off.png" />
+    <None Include="Resources\CircuitBreaker_4P.png" />
+    <None Include="Resources\CircuitBreaker_2P_off.png" />
+    <None Include="Resources\CircuitBreaker_2P.png" />
+    <None Include="Resources\CXEIRLN3p0.png" />
+    <None Include="Resources\CSwitch_5p.png" />
+    <None Include="Resources\Switch_5pButton.png" />
+    <None Include="Resources\CSwitch_5p_off.png" />
+    <None Include="Resources\Switch_4pButton.png" />
+    <None Include="Resources\Switch_2pButton.png" />
+    <None Include="Resources\Switch_3pButton.png" />
+    <None Include="Resources\CSwitch_4p_off.png" />
+    <None Include="Resources\CSwitch_4p.png" />
+    <None Include="Resources\CSwitch_2p_off.png" />
+    <None Include="Resources\CSwitch_2p.png" />
+    <None Include="Resources\Switch_5p_off.png" />
+    <None Include="Resources\Switch_5p.png" />
+    <None Include="Resources\Switch_4p_off.png" />
+    <None Include="Resources\Switch_4p.png" />
+    <None Include="Resources\Switch_2p_off.png" />
+    <None Include="Resources\Switch_2p.png" />
+    <None Include="Resources\play-pause_button.png" />
+    <None Include="Resources\CMpoutonFwtismou0.png" />
+    <None Include="Resources\CMpoutonKoudouniou1.png" />
+    <None Include="Resources\CMpoutonKoudouniou0.png" />
+    <None Include="Resources\CMpoutonFwtismou1.png" />
+    <None Include="Resources\CbuttonKey1.png" />
+    <None Include="Resources\CbuttonKey0.png" />
+    <None Include="Resources\CbuttonEmergency1.png" />
+    <None Include="Resources\CbuttonEmergency0.png" />
+    <None Include="Resources\_Thermiko.png" />
+    <None Include="Resources\_Relay1NO1NC.png" />
+    <None Include="Resources\_Supply_FromTop.png" />
+    <None Include="Resources\Sirenbutton.png" />
+    <None Include="Resources\buzzerbutton.png" />
+    <None Include="Resources\CReleLyxnias0.png" />
+    <None Include="Resources\CReleLyxnias1.png" />
+    <None Include="Resources\ReleLyxnias_Button.png" />
+    <None Include="Resources\ReleLyxnias1.png" />
+    <None Include="Resources\ReleLyxnias0.png" />
+    <None Include="Resources\CDoorLock0.png" />
+    <None Include="Resources\DoorLock1.png" />
+    <None Include="Resources\DoorLock0.png" />
+    <None Include="Resources\DoorLock_Button.png" />
+    <None Include="Resources\CDoorLock1.png" />
+    <None Include="Resources\buttonKey1.png" />
+    <None Include="Resources\buttonKey0.png" />
+    <None Include="Resources\buttonKey_Button.png" />
+    <None Include="Resources\buttonEmergency1.png" />
+    <None Include="Resources\buttonEmergency0.png" />
+    <None Include="Resources\buttonEmergency_Button.png" />
+    <None Include="Resources\Awning_wind.png" />
+    <None Include="Resources\awningbottom.png" />
+    <None Include="Resources\Awning_moon.png" />
+    <None Include="Resources\Awning_sun.png" />
+    <None Include="Resources\Awning_rain.png" />
+    <None Include="Resources\awningsettingsimage.png" />
+    <None Include="Resources\awning0.png" />
+    <None Include="Resources\awningtop.png" />
+    <None Include="Resources\Awning_Button.png" />
+    <None Include="Resources\Sensor_Rain0.png" />
+    <None Include="Resources\CSensor_Rain0.png" />
+    <None Include="Resources\CSensor_Rain1.png" />
+    <None Include="Resources\Sensor_Rain1.png" />
+    <None Include="Resources\Faros1a.png" />
+    <None Include="Resources\Faros0.png" />
+    <None Include="Resources\Faros_button.png" />
+    <None Include="Resources\cFaros1.png" />
+    <None Include="Resources\cFaros0.png" />
+    <None Include="Resources\Faros1b.png" />
+    <None Include="Resources\Sensor_Wind0.png" />
+    <None Include="Resources\Sensor_Wind_Button.png" />
+    <None Include="Resources\Sensor_Rain_Button.png" />
+    <None Include="Resources\Sensor_Light1.png" />
+    <None Include="Resources\Sensor_Light0.png" />
+    <None Include="Resources\Sensor_Light_Button.png" />
+    <None Include="Resources\CSensor_Wind1.png" />
+    <None Include="Resources\CSensor_Wind0.png" />
+    <None Include="Resources\CSensor_Light1.png" />
+    <None Include="Resources\CSensor_Light0.png" />
+    <None Include="Resources\Sensor_Wind1.png" />
+    <None Include="Resources\hourmeter1.png" />
+    <None Include="Resources\hourmeter.png" />
+    <None Include="Resources\hourmeter_button.png" />
+    <None Include="Resources\SplashEHE.png" />
+    <None Include="Resources\Cmpara_geiwshs.png" />
+    <None Include="Resources\Cmpara_oudeterou.png" />
+    <None Include="Resources\mpara_geiwshs.png" />
+    <None Include="Resources\MpoutonKoudouniou1.png" />
+    <None Include="Resources\MpoutonKoudouniou0.png" />
+    <None Include="Resources\MpoutonFwtismou1.png" />
+    <None Include="Resources\MpoutonFwtismou0.png" />
+    <None Include="Resources\SocketIND5p1.png" />
+    <None Include="Resources\SocketIND5p0.png" />
+    <None Include="Resources\SocketIND4p1.png" />
+    <None Include="Resources\SocketIND4p0.png" />
+    <None Include="Resources\SocketIND3p1.png" />
+    <None Include="Resources\SocketIND3p0.png" />
+    <None Include="Resources\Palette.png" />
+    <None Include="Resources\Syromenh_button.png" />
+    <None Include="Resources\Garazoporta_Button.png" />
+    <None Include="Resources\Socket5p_Button.png" />
+    <None Include="Resources\Socket4p_Button.png" />
+    <None Include="Resources\Socket3p_button.png" />
+    <None Include="Resources\546505__voicemaker__door_bell_campanello-porta_by-wikingo-voicemaker.wav" />
+    <None Include="Resources\MpoutonKoudouniouButton.png" />
+    <None Include="Resources\MpoutonFwtismouButton.png" />
+    <None Include="Resources\CStairs1.png" />
+    <None Include="Resources\CStairs0.png" />
+    <None Include="Resources\StairsT.png" />
+    <None Include="Resources\Stairs1.png" />
+    <None Include="Resources\Stairs0.png" />
+    <None Include="Resources\CStairsT.png" />
+    <None Include="Resources\mpoyat.png" />
+    <None Include="Resources\Gkaraz.png" />
+    <None Include="Resources\WaterTankButton.png" />
+    <None Include="Resources\WaterTank.png" />
+    <None Include="Resources\FloterButton.png" />
+    <None Include="Resources\floter1.png" />
+    <None Include="Resources\floter0.png" />
+    <None Include="Resources\cfloter1.png" />
+    <None Include="Resources\cfloter0.png" />
+    <None Include="Resources\Syromenh_Background4Edit.png" />
+    <None Include="Resources\Syromenh_Background.png" />
+    <None Include="Resources\Syromenh_porta.png" />
+    <None Include="Resources\ReleRagas1.png" />
+    <None Include="Resources\ReleRagas0.png" />
+    <None Include="Resources\CReleRagas1.png" />
+    <None Include="Resources\CReleRagas0.png" />
+    <None Include="Resources\Nyxt_FromLeft1.png" />
+    <None Include="Resources\Nyxt_FromLeft0.png" />
+    <None Include="Resources\Nyxt_FromBelow1.png" />
+    <None Include="Resources\Nyxt_FromBelow0.png" />
+    <None Include="Resources\Nyxt_FromAbove1.png" />
+    <None Include="Resources\Nyxt_FromAbove0.png" />
+    <None Include="Resources\CNyxt_FromLeft1.png" />
+    <None Include="Resources\CNyxt_FromLeft0.png" />
+    <None Include="Resources\CNyxt_FromBelow1.png" />
+    <None Include="Resources\CNyxt_FromBelow0.png" />
+    <None Include="Resources\CNyxt_FromAbove1.png" />
+    <None Include="Resources\CNyxt_FromAbove0.png" />
+    <None Include="Resources\WaterheaterButton.png" />
+    <None Include="Resources\WashingMachineButton.png" />
+    <None Include="Resources\WashingMachine0.png" />
+    <None Include="Resources\CWashingMachine1.png" />
+    <None Include="Resources\CWashingMachine0.png" />
+    <None Include="Resources\WashingMachine1.gif" />
+    <None Include="Resources\TVButton.png" />
+    <None Include="Resources\OvenButton.png" />
+    <None Include="Resources\MicrowaveButton.png" />
+    <None Include="Resources\HoodButton.png" />
+    <None Include="Resources\HeaterSinglePhButton.png" />
+    <None Include="Resources\FreezerButton.png" />
+    <None Include="Resources\FanButton.png" />
+    <None Include="Resources\DryerButton.png" />
+    <None Include="Resources\DishWasherButton.png" />
+    <None Include="Resources\BellButton.png" />
+    <None Include="Resources\ACButton.png" />
+    <None Include="Resources\Waterheater0.png" />
+    <None Include="Resources\CWaterheater1.png" />
+    <None Include="Resources\CWaterheater0.png" />
+    <None Include="Resources\Waterheater1.png" />
+    <None Include="Resources\TV0.png" />
+    <None Include="Resources\CTV1.png" />
+    <None Include="Resources\CTV0.png" />
+    <None Include="Resources\TV1.png" />
+    <None Include="Resources\Oven0.png" />
+    <None Include="Resources\COven1.png" />
+    <None Include="Resources\COven0.png" />
+    <None Include="Resources\Oven1.png" />
+    <None Include="Resources\Microwave0.png" />
+    <None Include="Resources\CMicrowave1.png" />
+    <None Include="Resources\CMicrowave0.png" />
+    <None Include="Resources\Microwave1.png" />
+    <None Include="Resources\Hood0.png" />
+    <None Include="Resources\CHood1.png" />
+    <None Include="Resources\CHood0.png" />
+    <None Include="Resources\Hood1.png" />
+    <None Include="Resources\HeaterSinglePh0.png" />
+    <None Include="Resources\CHeaterSinglePh1.png" />
+    <None Include="Resources\CHeaterSinglePh0.png" />
+    <None Include="Resources\HeaterSinglePh1.png" />
+    <None Include="Resources\Freezer0.png" />
+    <None Include="Resources\CFreezer1.png" />
+    <None Include="Resources\CFreezer0.png" />
+    <None Include="Resources\Freezer1.png" />
+    <None Include="Resources\Fan0.png" />
+    <None Include="Resources\CFan1.png" />
+    <None Include="Resources\CFan0.png" />
+    <None Include="Resources\Fan1.png" />
+    <None Include="Resources\Dryer0.png" />
+    <None Include="Resources\CDryer1.png" />
+    <None Include="Resources\CDryer0.png" />
+    <None Include="Resources\Dryer1.png" />
+    <None Include="Resources\DishWasher0.png" />
+    <None Include="Resources\CDishWasher1.png" />
+    <None Include="Resources\CDishWasher0.png" />
+    <None Include="Resources\DishWasher1.png" />
+    <None Include="Resources\CBell0.png" />
+    <None Include="Resources\Bell1.png" />
+    <None Include="Resources\Bell0.png" />
+    <None Include="Resources\CBell1.png" />
+    <None Include="Resources\CAC0.png" />
+    <None Include="Resources\AC1.gif" />
+    <None Include="Resources\AC0.png" />
+    <None Include="Resources\CAC1.png" />
+    <None Include="Resources\592388__magnuswaker__car-crash-with-glass.wav" />
+    <None Include="Resources\GarageSettingsImage.png" />
+    <None Include="Resources\mpara_oudeterou.png" />
+    <None Include="Resources\Γκαραζόπορτα.svg" />
+    <None Include="Resources\477621__joao_janz__power-cord-plug-1_2.wav" />
+    <None Include="Resources\CSocket1ph1.png" />
+    <None Include="Resources\CSocket1ph0.png" />
+    <None Include="Resources\Socket1ph1.png" />
+    <None Include="Resources\Socket1ph0.png" />
+    <None Include="Resources\Socket1phButton.png" />
+    <None Include="Resources\Cc-by-nc-sa_icon.svg.png" />
+    <None Include="Resources\PLC_Powered.png" />
+    <None Include="Resources\PLCButton.png" />
+    <None Include="Resources\PLC.png" />
+    <None Include="Resources\AboutText.txt" />
+    <None Include="Resources\167476__superandy__boil6.wav" />
+    <None Include="Resources\411933__iam_calderon__cooking-burgerstatic.wav" />
+    <None Include="Resources\Stove0.png" />
+    <None Include="Resources\CStove0.png" />
+    <None Include="Resources\Stove1.png" />
+    <None Include="Resources\Cstove1.png" />
+    <None Include="Resources\heaterbutton.png" />
+    <None Include="Resources\StoveButton.png" />
+    <None Include="Resources\Heater0.png" />
+    <None Include="Resources\CHeater0.png" />
+    <None Include="Resources\Heater1.png" />
+    <None Include="Resources\Cheater1.png" />
+    <None Include="Resources\ReleRagasButton.png" />
+    <None Include="Resources\kastania0.png" />
+    <None Include="Resources\ckastania1.png" />
+    <None Include="Resources\ckastania0.png" />
+    <None Include="Resources\kastaniaButton.png" />
+    <None Include="Resources\kastania1.png" />
+    <None Include="Resources\COMBUTTON.png" />
+    <None Include="Resources\CCOM10.png" />
+    <None Include="Resources\CCOM01.png" />
+    <None Include="Resources\CCOM00.png" />
+    <None Include="Resources\COM11.png" />
+    <None Include="Resources\COM10.png" />
+    <None Include="Resources\COM01.png" />
+    <None Include="Resources\COM00.png" />
+    <None Include="Resources\CCOM11.png" />
+    <None Include="Resources\144277__dwoboyle__light_switch-0003-on-flicked.wav" />
+    <None Include="Resources\LightSwitchButton.png" />
+    <None Include="Resources\LightSwitchButton_MES.png" />
+    <None Include="Resources\LightSwitchButton_ALE.png" />
+    <None Include="Resources\LightSwitchAleAK_Off.png" />
+    <None Include="Resources\CLightSwitchSingle_On.png" />
+    <None Include="Resources\CLightSwitchSingle_Off.png" />
+    <None Include="Resources\CLightSwitchAleME_On.png" />
+    <None Include="Resources\CLightSwitchAleME_Off.png" />
+    <None Include="Resources\CLightSwitchAleAK_On.png" />
+    <None Include="Resources\CLightSwitchAleAK_Off.png" />
+    <None Include="Resources\LightSwitchSingle_On.png" />
+    <None Include="Resources\LightSwitchSingle_Off.png" />
+    <None Include="Resources\LightSwitchAleME_On.png" />
+    <None Include="Resources\LightSwitchAleME_Off.png" />
+    <None Include="Resources\LightSwitchAleAK_On.png" />
+    <None Include="Resources\mpara_geiwshsButton.png" />
+    <None Include="Resources\mpara_oudeterouButton.png" />
+    <None Include="Resources\fuse1pbutton.png" />
+    <None Include="Resources\fuse3pbutton.png" />
+    <None Include="Resources\fuse1p_off.png" />
+    <None Include="Resources\fuse3p_off.png" />
+    <None Include="Resources\333872__alienxxx__screws.wav" />
+    <None Include="Resources\333872__alienxxx__screws.mp3" />
+    <None Include="Resources\cfuse3p_off.png" />
+    <None Include="Resources\cfuse1p_on.png" />
+    <None Include="Resources\cfuse1p_off.png" />
+    <None Include="Resources\cfuse3p_on.png" />
+    <None Include="Resources\fuse1p_on.png" />
+    <None Include="Resources\fuse3p_on.png" />
+    <None Include="Resources\Thermomagneticbutton.png" />
+    <None Include="Resources\ThermoMagnetic_test.png" />
+    <None Include="Resources\CThermoMagnetic_test.png" />
+    <None Include="Resources\CThermoMagnetic_on.png" />
+    <None Include="Resources\CThermoMagnetic_off.png" />
+    <None Include="Resources\ThermoMagnetic_on.png" />
+    <None Include="Resources\ThermoMagnetic_off.png" />
+    <None Include="Resources\CDDE1_test.png" />
+    <None Include="Resources\DDE1_on.png" />
+    <None Include="Resources\DDE1_off.png" />
+    <None Include="Resources\CDDE1_off.png" />
+    <None Include="Resources\DDE1_test.png" />
+    <None Include="Resources\DDE1Button.png" />
+    <None Include="Resources\DDE2_off.png" />
+    <None Include="Resources\DDE_on.png" />
+    <None Include="Resources\DDE_off.png" />
+    <None Include="Resources\CDDE_test.png" />
+    <None Include="Resources\CDDE_off.png" />
+    <None Include="Resources\DDE_test.png" />
+    <None Include="Resources\DDEbutton.png" />
+    <None Include="Resources\Splash.png" />
+    <None Include="Resources\background.png" />
+    <None Include="Resources\C3phIndicator.png" />
+    <None Include="Resources\Relay2NO2NC.png" />
+    <None Include="Resources\CRelay2NO2NC_Powered.png" />
+    <None Include="Resources\CRelay2NO2NC.png" />
+    <None Include="Resources\Relay2NO2NC_Powered.png" />
+    <None Include="Resources\Clamp.png" />
+    <None Include="Resources\Clamp_powered.png" />
+    <None Include="Resources\Cbuzzer.png" />
+    <None Include="Resources\Cbuzzer_powered.png" />
+    <None Include="Resources\Csiren.png" />
+    <None Include="Resources\Csiren_powered.png" />
+    <None Include="Resources\CPhoto_Switch_Active.png" />
+    <None Include="Resources\CPhoto_Switch.png" />
+    <None Include="Resources\CTerminal_Switch_Active.png" />
+    <None Include="Resources\CTerminal_Switch.png" />
+    <None Include="Resources\CThermiko_Tripped_Test_Pressed.png" />
+    <None Include="Resources\CThermiko_Tripped.png" />
+    <None Include="Resources\CThermiko_Reset.png" />
+    <None Include="Resources\CThermiko.png" />
+    <None Include="Resources\CSwitch_3p_off.png" />
+    <None Include="Resources\CSwitch_3p.png" />
+    <None Include="Resources\CSwitch_1p_off.png" />
+    <None Include="Resources\CSwitch_1p.png" />
+    <None Include="Resources\CStop_Pressed.png" />
+    <None Include="Resources\CStartStop_Pressed.png" />
+    <None Include="Resources\CStartStop.png" />
+    <None Include="Resources\CStart_Pressed.png" />
+    <None Include="Resources\CStart.png" />
+    <None Include="Resources\Crelay1NO1NC_Powered.png" />
+    <None Include="Resources\Crelay1NO1NC.png" />
+    <None Include="Resources\CLightRed_on.png" />
+    <None Include="Resources\CLightRed.png" />
+    <None Include="Resources\CLightGreen_on.png" />
+    <None Include="Resources\CLightGreen.png" />
+    <None Include="Resources\CDelayOn_Tripped.png" />
+    <None Include="Resources\CDelayOn_Powered.png" />
+    <None Include="Resources\CDelayOn.png" />
+    <None Include="Resources\CDelayOff_Powered_Counting.png" />
+    <None Include="Resources\CDelayOff_Powered.png" />
+    <None Include="Resources\CDelayOff.png" />
+    <None Include="Resources\CConnector.png" />
+    <None Include="Resources\C_Stop.png" />
+    <None Include="Resources\CThermiko_Tripped_Test_Reset_Pressed.png" />
+    <None Include="Resources\470504__onderwish__emergency-siren.wav" />
+    <None Include="Resources\go-back.png" />
+    <None Include="Resources\play-button.png" />
+    <None Include="Resources\pause-button.png" />
+    <None Include="Resources\3phIndicator.png" />
+    <None Include="Resources\3phIndicatorButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <FileAssociation Include=".cir">
+      <Visible>False</Visible>
+      <Description>Κύκλωμα Εργαστηρίου Κυκλωμάτων Αυτοματισμού</Description>
+      <Progid>1</Progid>
+      <DefaultIcon>Contactor.ico</DefaultIcon>
+    </FileAssociation>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
